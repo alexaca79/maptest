@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+...
+
+<style>
+
+#map{
+    position:absolute;
+    top:0;
+    bottom:0;
+    width:100%;
+</style>
+
+
+<div id="map"></div>
+...
+<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+<script>
+// get the viz.json url from the CARTO Editor
+// - click on visualize
+// - create new visualization
+// - make visualization public
+// - click on publish
+// - go to API tab
+
+window.onload = function() {
+  cartodb.createVis('map', 'https://alexaca79.carto.com/api/v2/viz/37af7f44-6634-11e6-8bd3-0ef24382571b/viz.json');
+}
+</script>
